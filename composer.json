@@ -14,5 +14,15 @@
     "psr-4": {
       "Vsellis\\Contact\\": "src/"
     }
-  }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Vsellis\\Contact\\ContactServiceProvider"
+      ],
+      "aliases": {
+        "Debugbar": "Barryvdh\\Debugbar\\Facade"
+      }
+    }
+  },
 }
