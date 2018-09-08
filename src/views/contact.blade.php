@@ -7,15 +7,21 @@
     <title>Contact Us</title>
 </head>
 <body>
-    <h1>Contact Us</h1>
+<h1>Contact Us</h1>
 
-    <form action="{{route('contact.store')}}" method="post">
-        @csrf
+<form action="{{route('contact.store')}}" method="post">
+    @csrf
+    <p>
         <input type="text" name="name" placeholder="Your name please">
+    </p>
+    <p>
         <input type="email" name="email" placeholder="Your email">
+    </p>
+    <p>
         <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+    </p>
 
-        <input type="submit" value="submit">
-    </form>
+    <input type="submit" value="submit">
+</form>
 </body>
 </html>
